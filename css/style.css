@@ -1,9 +1,20 @@
 @import url(reset.css);
+@font-face {
+  font-family: Limelight;
+  src: url("/Fonts/Limelight/Limelight-Regular.ttf");
+  font-family: MontserratM;
+  src: url("/Fonts/Limelight/Montserrat-Medium.ttf");
+  font-family: MontserratR;
+  src: url("/Fonts/Limelight/Montserrat-Regular.ttf");
+}
 
 body {
+  background-image: url("/images/triangle.jpg");
+  backdrop-filter: blur(4px) sepia(65%) grayscale(50%);
+  background-size: cover;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  align-items: center;
 }
 
 article {
@@ -12,10 +23,11 @@ article {
   align-items: center;
   justify-content: space-evenly;
   gap: 1rem;
-  background-color: grey;
+  background-color: #f8c7c6;
+
   width: 18rem;
-  height: 30rem;
-  border: 2px solid black;
+  height: 36rem;
+
   border-radius: 2rem;
 }
 
@@ -23,38 +35,66 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: rgb(255, 255, 255, 0.5);
   width: 65%;
-  height: 39%;
-  /* margin-top: 1rem; */
+  height: 35%;
   border-radius: 1rem;
+  transition: 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .bgImage {
-  border: 2px solid blueviolet;
+  border: 3px solid rgb(246, 244, 248);
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
-  background-image: url(/images/lunaglasses.jpg);
+  background-image: url(/images/chii1.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 66%;
 }
 
 .profile-info {
-  border: 2px solid green;
   width: 85%;
-  height: 14.5rem;
+  height: 19rem;
   border-radius: 1rem;
-  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f8f7eb;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
 }
 p {
-  background-color: #244162;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e1b9af;
   width: 85%;
-  height: 3rem;
+  height: 4.5rem;
   border-radius: 0.5rem;
+  font-family: MontserratR;
+  text-align: center;
+  /* Animation */
+  transition: 0.2s;
+
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+}
+p:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+.name {
+  font-family: Limelight, Verdana;
+  font-size: 25px;
+}
+
+span {
+  font-family: MontserratM, sans-serif;
+  font-weight: 900;
 }
 
 .flex-center {
@@ -65,23 +105,24 @@ p {
 
 @media (min-width: 500px) {
   article {
-    width: 30rem;
-    height: 22rem;
+    width: 35rem;
+    height: 27rem;
   }
 
   .profile-info {
-    border: 2px solid green;
     padding: 20px;
-    width: 90%;
-    height: 7rem;
+    width: 32rem;
+    height: 8rem;
     border-radius: 1rem;
-    background-color: #fff;
     flex-direction: row;
     gap: 1rem;
   }
+  p {
+    height: 4.5rem;
+  }
   .img-container {
     width: 39%;
-    height: 50%;
+    height: 48%;
   }
 }
 
@@ -89,7 +130,6 @@ p {
   body {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
   }
 
   article {
@@ -114,14 +154,7 @@ p {
   .profile-info {
     flex-direction: column;
     justify-content: space-around;
-    /* margin-top: 1rem; */
     width: 40%;
     height: 80%;
-
-    background-color: #ffffff;
-  }
-
-  P {
-    background-color: #244162;
   }
 }

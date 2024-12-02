@@ -33,10 +33,10 @@ To view the project locally, you can either open the project files in your code 
 ### Tasks
 In `index.html`, add the following for your contact card:
 - [x] A Profile Image (your image should be stored in the images folder)
-- [ ] A Name
-- [ ] Title
-- [ ] Phone Number
-- [ ] Company Name
+- [x] A Name
+- [x] Title
+- [x] Phone Number
+- [x] Company Name
 
 In `style.css`, do the following:
 - [x] Include the css reset in this file. If you are unsure how to do this, please refer to the last assignment.
@@ -45,7 +45,7 @@ In `style.css`, do the following:
 
 
 **BONUS**
-- [ ] Make your contact card centered vertically, as well as horizontally.
+- [x] Make your contact card centered vertically, as well as horizontally.
 
 ### Submitting Your Work
 
